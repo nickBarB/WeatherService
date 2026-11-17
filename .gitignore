@@ -1,0 +1,102 @@
+# Java bytecode and JVM diagnostics
+*.class
+hs_err_pid*
+replay_pid*
+*.hprof
+*.jfr
+
+# Build output (including multi-module projects)
+target/
+build/
+out/
+# Source packages may legitimately have these names.
+!**/src/**/target/
+!**/src/**/build/
+!**/src/**/out/
+
+# Gradle caches and local configuration
+.gradle/
+.kotlin/
+local.properties
+# Keep gradle.properties and dependency lockfiles under version control.
+# Put credentials in ~/.gradle/gradle.properties or environment variables.
+
+# Maven release and backup files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+# Build wrappers must be versioned for reproducible builds.
+# Do not ignore *.jar globally: wrappers and vendored libraries may need them.
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse / Spring Tool Suite
+.apt_generated/
+.apt_generated_tests/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+bin/
+!**/src/**/bin/
+
+# NetBeans (keep shared nbproject configuration)
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+dist/
+
+# VS Code local workspace configuration
+.vscode/
+.history/
+
+# Logs and coverage reports
+*.log
+logs/
+coverage/
+.jacocodata/
+*.exec
+
+# Local environment files (keep sanitized examples)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Temporary and editor files
+/tmp/
+/temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Project-specific local files
+hint.txt
