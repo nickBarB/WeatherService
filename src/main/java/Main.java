@@ -13,6 +13,8 @@ import io.github.cdimascio.dotenv.Dotenv;
 import io.github.cdimascio.dotenv.DotenvException;
 
 public class Main {
+    private static final String FORECAST_URL = "https://api.weather.yandex.ru/v2/forecast";
+
     public static void main(String[] args) {
         System.out.println("Сервис погоды\n");
 
@@ -92,7 +94,10 @@ public class Main {
 
     static String getWeather(double lat, double lon, int limit, String key)
             throws IOException, InterruptedException {
-        String url = "https://api.weather.yandex.ru/v2/forecast?lat=" + lat + "&lon=" + lon + "&limit=" + limit;
+        String url = FORECAST_URL
+                + "?lat=" + lat
+                + "&lon=" + lon
+                + "&limit=" + limit;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .timeout(Duration.ofSeconds(30))
